@@ -10,11 +10,12 @@
 
 def squre_dict(keys,valus):
     '''
-    Add keys and values to dictionary.
+    find the squre values in given dictionary.
 
     Parameters:
-    keys(int): keys .
+    keys(int): keys.
     values(int):values
+
     Returns:
     Dectionory
     '''
