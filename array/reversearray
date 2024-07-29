@@ -1,0 +1,42 @@
+'''
+   @Author: v sanjay kumar
+   @Date: 2024-07-22 02:00:30
+   @Last Modified by: v sanjay kumar
+   @Last Modified time: 2024-07-22 02:00:30
+   @Title : reverse array array
+'''
+
+
+import array
+def arrayaccess(arr):
+    '''reverse all elements in the array.
+
+    Parameters:
+    func (function): takes the one array.
+
+    Returns:
+    reversed arr
+    '''
+
+    rev =[]
+    for i in range(len(arr)-1,-1,-1):
+        rev.append(arr[i])
+    return rev
+       
+
+
+
+
+def main():
+    n =int(input('Enter a array length :'))
+    arr =array.array('i',[])
+    for _ in range(n):
+        arr.append(int(input("Enter a number :")))
+    print("before reverse",arr)
+    print("after reverse",arrayaccess(arr))
+
+
+
+
+if __name__ =="__main__":
+    main()
